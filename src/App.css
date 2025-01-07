@@ -1,0 +1,451 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+#root {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ /* font-family: "Century Gothic", "Apple Gothic", Arial, sans-serif; */
+ background: linear-gradient(to right, #050E0B 0%, #112921 100%); 
+
+}
+body{
+  /* font-family: "Century Gothic", "Apple Gothic", Arial, sans-serif; */
+  /* background: linear-gradient(to right, #050E0B 0%, #112921 100%);  */
+  height: auto;
+  overflow-x: hidden;
+}
+
+.montserrat-subrayada-bold {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFFFFF;
+  color: #006400;
+}
+.montserrat-subrayada{
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-image{
+  background-image: url("../src/assets/Services.png");
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height:2486px;
+}
+.card{
+  background-image: url("../src/assets/cardone.png");
+  Width:381px;
+  height:530px;
+  
+  
+}
+.cardtwo{
+  background-image: url("../src/assets/cardtwo.png");
+  Width:381px;
+  height:530px;
+}
+.container {
+  max-width: 1200px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #05FD7B !important;
+  background-color: whitesmoke !important;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-enter {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide-exit {
+  animation: slide-out 0.5s forwards;
+}
+
+
+/* .card_one{
+  
+  animation: card_one 2s ease-in-out forwards 1s;
+  
+}
+
+.card_two{
+  
+  animation: card_two 2s ease-in-out forwards 1s;
+  
+}
+
+.card_three{
+  
+  animation: card_three 2s ease-in-out forwards 1s;
+  
+}
+
+.card_four{
+  
+  animation: card_four 2s ease-in-out forwards 1s;
+  
+}
+
+.card_five{
+  
+  animation: card_five 2s ease-in-out forwards 1s;
+  
+}
+
+.card_six{
+  
+  animation: card_six 2s ease-in-out forwards 1s;
+  
+}
+.itemone{
+  
+  animation: itemone 2s ease-in-out forwards 1s;
+  
+}
+.itemtwo{
+  
+  animation: itemtwo 2s ease-in-out forwards 1s;
+  
+}
+.itemthree{
+  
+  animation: itemthree 2s ease-in-out forwards 1s;
+  
+}
+.itemfour{
+  
+  animation: itemfour 2s ease-in-out forwards 1s;
+  
+}
+.itemfive{
+  
+  animation: itemfive 2s ease-in-out forwards 1s;
+  
+}
+.heading{
+  
+  animation: heading 2s ease-in-out forwards;
+  
+}
+.contacttext{
+  
+  animation: contacttext 2s ease-in-out forwards;
+  
+}
+.forms{
+  
+  animation: forms 2s ease-in-out forwards;
+  
+}
+.formtext{
+  
+  animation: formtext 2s ease-in-out forwards;
+  
+}
+
+
+ */
+
+
+
+
+/* 
+@keyframes animate-slide {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+
+.animate-slide {
+  animation-name: animate-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2s;
+  animation-direction: backward;
+  animation-fill-mode: forwards;
+} */
+/* body {
+  overflow-x: hidden; /* Prevent horizontal scrolling 
+*/
+
+
+/* .content {
+  opacity: 0; 
+  animation: slide-left 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+.image {
+  opacity: 0; 
+  animation: slide-right 1s ease-in-out forwards;
+  animation-delay: 3s;
+} */
+
+/* .nav{
+  animation: nav 3s ease-in-out forwards;
+}
+
+.textone {
+  animation: textone 2s ease-in-out forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.texttwo{
+  animation: texttwo 2s ease-in-out forwards ;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.boxone{
+  animation: boxone 2s ease-in-out forwards ;
+}
+.boxtwo{
+  animation: boxtwo 2s ease-in-out forwards ;
+} */
+
+@keyframes slide-left {
+  from {
+      transform: translateX(-100%);
+      opacity: 0; /* Initially hide the content */
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1; /* Initially hide the content */
+  }
+}
+
+@keyframes slide-right {
+  from {
+      transform: translateX(100%);
+      opacity: 0; /* Initially hide the content */
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1; /* Initially hide the content */
+  }
+}
+
+/* @keyframes nav {
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0);
+  }
+} */
+
+/* @keyframes textone {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+/* @keyframes texttwo {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+/* @keyframes boxone {
+  from{
+    transform: translateY(100%);
+  }to{
+    transform: translateX(0);
+  }
+} */
+
+/* @keyframes boxtwo {
+  from{
+    transform: translateY(-100%);
+  }to{
+    transform: translateX(0);
+  }
+} */
+/* @keyframes arrow {
+  from{
+    transform: translateY(-100%);
+  }to{
+    transform: translatey(0);
+  }
+}
+@keyframes card_one {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes card_two {
+  from{
+    transform: translateX(100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes card_three {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes card_four {
+  from{
+    transform: translateX(100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes card_five {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes card_six {
+  from{
+    transform: translateX(100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes itemtwo {
+  from{
+    transform: translateY(-100%);
+  }to{
+    transform: translateY(0);
+  }
+}
+@keyframes itemone {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes itemthree {
+  from{
+    transform: translateX(100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes itemfour {
+  from{
+    transform: translateY(100%);
+  }to{
+    transform: translateY(0);
+  }
+}
+@keyframes itemfive {
+  from{
+    transform: translateY(100%);
+  }to{
+    transform: translateY(0);
+  }
+}
+@keyframes  heading{
+  from{
+    transform: translateY(-100%);
+  }to{
+    transform: translateY(0);
+  }
+}
+@keyframes contacttext {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes forms {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+@keyframes formtext{
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX(0);
+  }
+}
+ */
+
+
+/* @keyframes arrowDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px); /* Adjust the distance as needed 
+  }
+}
+*/
+/*
+.arrow {
+  animation: arrowDown 1s infinite alternate; /* Adjust the animation duration and other properties as needed 
+} 
+/* @keyframes testimonials {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-testimonials > * {
+  animation: testimonials 1s ease-out;
+}
+ */
